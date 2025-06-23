@@ -24,7 +24,7 @@ pipeline {
             }
         }
 
-        stage('Checkout') {
+        stage('Checkout Aplicação') {
             steps {
                 git credentialsId: 'GITHUB', url: 'https://github.com/guivascs/Python-base'
             }
