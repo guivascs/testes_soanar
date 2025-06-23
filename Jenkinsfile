@@ -24,6 +24,11 @@ pipeline {
             }
         }
 
+        stage('Checkout') {
+            steps {
+                git credentialsId: 'GITHUB', url: 'https://github.com/guivascs/Python-base'
+            }
+        }
         // Estágio para realizar o deploy
         stage('Deploy') {
             steps {
