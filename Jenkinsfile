@@ -26,7 +26,7 @@ pipeline {
 
         stage('Checkout Aplicação') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/guivascs/Python-base'
+                git credentialsId: 'GITHUB', url: 'https://github.com/guivascs/Python-base', branch: 'main'
             }
         }
         // Estágio para realizar o deploy
